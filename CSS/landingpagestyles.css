@@ -1,3 +1,11 @@
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,9 +55,16 @@ table {
 	border-spacing: 0;
 }
 
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
 body {
 	background-color: LightGrey;
 	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #838994;
+	letter-spacing: 0.03em;
 
 }
 
@@ -70,6 +85,8 @@ div {
     height: 4.375rem;
     width: 970px;
     margin: 0 auto;
+    padding: 0 15px;
+    
 }
 .top-navigation .logo {
     height: 4.375rem;
