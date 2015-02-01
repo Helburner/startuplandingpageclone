@@ -49,9 +49,46 @@ table {
 
 body {
 	background-color: LightGrey;
+	font-family: 'Roboto', sans-serif;
 
 }
 
 div {
 	border: 1px solid Chocolate;
+}
+
+/* Navigation Section */
+.top-navigation {
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+
+.top-navigation > .content {
+    height: 4.375rem;
+    width: 970px;
+    margin: 0 auto;
+}
+.top-navigation .logo {
+    height: 4.375rem;
+}
+.top-navigation .links {
+    color: #838994;
+    float: right;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 1.563rem;
+}
+.top-navigation .links li.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    color: #333333;
+    cursor: pointer;
 }
